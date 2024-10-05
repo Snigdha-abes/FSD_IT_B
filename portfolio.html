@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link href='(link unavailable)' rel='stylesheet'>
+    <style>
+        @import url('(link unavailable)');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 10%;
+            background: #1c1c1c; 
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+        }
+        
+        .logo {
+            font-size: 25px;
+            color: #4db8ff; 
+            text-decoration: none;
+            font-weight: 700;
+        }
+        
+        .navbar a {
+            font-size: 18px;
+            color: #fff;  
+            text-decoration: none;
+            font-weight: 500;
+            margin-left: 35px;
+            transition: .3s;
+        }
+        
+        .navbar a:hover, .navbar a.active {
+            color: #66d9ef;
+        }
+        
+        .home {
+            height: 100vh;
+            background: linear-gradient(-90deg, #1c1c1c 65%, #f7f7f7 35%);  /* Changed to darker gray and light gray */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 10%;
+        }
+        
+        .home-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 500px;
+            height: 500px;
+            background: #1c1c1c;  /* Changed to darker gray */
+            border-radius: 50%;
+            border: 25px solid #f7f7f7;  /* Changed to light gray */
+            outline: 25px solid #1c1c1c;  
+        }
+        
+        .home-image img {
+            border-radius: 100%;
+            position: relative;
+            max-width: 380px;
+        }
+        
+        .home-content {
+            max-width: 600px;
+            color: #fff;
+            text-align: right;
+        }
+        
+        .home-content h1 {
+            font-size: 55px;
+            line-height: 1.2;
+        }
+        
+        .home-content h3 {
+            font-size: 40px;
+            color: transparent;
+            -webkit-text-stroke: .5px #66d9ef;  
+            background-image: linear-gradient(#66d9ef, #4db8ff);  
+            background-repeat: no-repeat;
+            -webkit-background-clip: text;
+            background-position: -410px 0;
+            animation: animateText 6s linear infinite;
+        }
+        
+        @keyframes animateText {
+            0%, 95%, 100% {
+                background-position: -410px 0;
+            }
+            65%, 85% {
+                background-position: 0 0;
+            }
+        }
+        
+        .home-content p {
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        
+        .home-sci {
+            margin: 25px 0 40px;
+        }
+        
+        .home-sci a {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            background: transparent;
+            border: 2px solid #66d9ef;  
+            border-radius: 50%;
+            font-size: 20px;
+            color: #66d9ef;  
+            text-decoration: none;
+            margin-left: 12px;
+        }
+        
+        .home-sci a:hover {
+            background: #4db8ff; 
+            color: #fff;
+        }
+
+.btn {
+    padding: 12px 35px;
+    background: #00abf0;
+    border-radius: 40px;
+    font-size: 17px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    box-shadow: 0 0 10px #00abf0;
+    transition: .5s;
+}
+
+.btn:hover {
+    box-shadow: none;
+}
+    </style>
+</head>
+
+<body>
+    <header class ="header">
+        <a href="#" class ="logo">Portfolio</a>
+
+        <nav class="navbar">
+            <a href="#" class="active">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Contact</a>
+            
+        </nav>
+    </header>
+
+    <section class="home">
+        <div class="home-image">
+            <img src="2.jpg" alt="" >
+        </div>
+        <div class="home-content">
+            <h1>Hi, I'm Snigdha Sharma</h1>
+            <h3>Frontend Developer</h3>
+            <p>I am a computer science undergraduate with a passion for development. I am a highly motivated and results-oriented individual with a strong track record of success. I am proficient in a variety of programming languages and technologies, and I am always eager to learn new things. I am also a team player and I am able to work effectively under pressure.</p>
+
+            <div class="home-sci">
+                <a href="https:"><i class='bx bxl-linkedin' ></i></a>
+                <a href="https:"><i class='bx bxl-twitter' ></i></a>
+                <a href="https:"><i class='bx bxl-facebook'></i></a>
+                <a href="https:"><i class='bx bxl-instagram' ></i></a>
+            </div>
+
+        </div>
+    </section>
+</body>
+</html>
