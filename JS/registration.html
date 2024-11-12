@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="reg.css">
+</head>
+<body>
+    <div class="container">
+        <div class="reg-form">
+            <h2>Student Registration Form</h2>
+            <form name="register" id="register" method="post" action="#" onsubmit="return validate()">
+                <label for="name">Name:</label><br>
+                <input type="text" name="sname" id="sname" placeholder="Enter Student Name"><br>
+                <label for="fname">Father's Name:</label><br>
+                <input type="text" name="fname" id="fname" placeholder="Enter Father's Name"><br>
+                <label for="mname">Mother's Name:</label><br>
+                <input type="text" name="mname" id="mname" placeholder="Enter Mother's Name"><br>
+                <label>Gender :</label><br>
+                <input type="radio" name="gender" value="Male" checked> Male
+                <input type="radio" name="gender" value="female"> Female<br><br>
+                <label for="dob">Date of Birth:</label><br>
+                <input type="date" id="dob"><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" placeholder="Enter your email id" required><br>
+                <label for="mobile">Mobile Number:</label><br>
+                <input type="text" name="mobile" id="mobile" placeholder="Enter your phone number" required><br>
+                <label for="caddress">Address:</label><br>
+                <textarea cols="50" rows="5" id="caddress" name="caddress"required></textarea><br>
+                <label for="branch">Branch:</label><br>
+                <select name="branch">
+                    <option value="IT">IT</option>
+                    <option value="CSE">CSE</option>
+                    <option value="ECE">ECE</option>
+                    <option value="ME">ME</option>
+                </select><br>
+                <label for="section">Section:</label><br>
+                <select name="section">
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                </select><br>
+                <input type="submit" value="Submit"/>
+                <input type="reset" value="Reset"/>
+            </form>
+        </div>
+    </div>
+    <script src="stu-registration.js"></script>
+</body>
+</html>
+
